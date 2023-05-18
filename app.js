@@ -47,4 +47,4 @@ function generateGroups() {
     outputDiv.appendChild(groupList);
   }
 }
-<script>
+</script>
