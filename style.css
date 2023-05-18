@@ -82,3 +82,9 @@ li {
   animation: rotate 2s linear infinite;
 }
 
+/* Stile per il background */
+body {
+  background-image: url('logo.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
