@@ -1,3 +1,4 @@
+<script>
 function generateGroups() {
   var frequencies = ["r1", "r8", "f2", "f4"];
   var namesInput = document.getElementById("names");
@@ -46,4 +47,4 @@ function generateGroups() {
     outputDiv.appendChild(groupList);
   }
 }
-
+<script>
