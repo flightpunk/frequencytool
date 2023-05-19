@@ -96,6 +96,7 @@ body {
   width: 100%;
   margin-top: 40px;
   border-collapse: collapse;
+  background-color: grey; /* Cambia il colore di sfondo in grigio */
 }
 
 #frequency-table caption {
@@ -106,16 +107,19 @@ body {
 }
 
 #frequency-table thead {
-  background-color: #ff5722;
+  background-color: lime;
 }
 
 #frequency-table th {
   padding: 10px;
-  text-align: left;
-  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  color: #000000; /* Cambia il colore del testo in nero */
 }
 
 #frequency-table tbody td {
   padding: 10px;
   border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  color: #000000; /* Cambia il colore del testo in nero */
 }
