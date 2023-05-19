@@ -1,13 +1,13 @@
 function generateGroups() {
   var frequencies = ["R1", "R8", "F2", "F4"];
   var namesInput = document.getElementById("names");
-  var names = namesInput.value.split(",").map(function(name) {
+  var names = namesInput.value.split(",").map(function (name) {
     return name.trim();
   });
 
   // Verifica se ci sono abbastanza nomi per coprire tutte le frequenze
   if (names.length < frequencies.length) {
-    var errMessage = "Il numero di nomi inseriti non è sufficiente per coprire tutte le frequenze.";
+	var errMessage = "Il numero di nomi inseriti non è sufficiente per coprire tutte le frequenze.";
     window.alert(errMessage);
     return;
   }
@@ -20,30 +20,18 @@ function generateGroups() {
   }
 
   // Forma gruppi casuali che contengono tutte le frequenze
-  var shuffledNames = names.slice().sort(function() {
+  var shuffledNames = names.slice().sort(function () {
     return 0.5 - Math.random();
   });
   var groups = [];
-  for (var frequency of frequencies) {
-    groups.push({ frequency: frequency, members: [] });
-  }
-
-  for (var i = 0; i < names.length; i++) {
-    var frequencyIndex = i % frequencies.length;
-    var frequency = frequencies[frequencyIndex];
-    groups[frequencyIndex].members.push(names[i]);
-  }
-
-  // Ordina i gruppi in base alla colonna "frequenza"
-  groups.sort(function(a, b) {
-    if (a.frequency < b.frequency) {
-      return -1;
-    } else if (a.frequency > b.frequency) {
-      return 1;
-    } else {
-      return 0;
+  while (shuffledNames.length > 0) {
+    var group = [];
+    for (var frequency of frequencies) {
+      var name = shuffledNames.pop();
+      group.push({ name: name, frequency: assignedFrequencies[name] });
     }
-  });
+    groups.push(group);
+  }
 
   // Mostra i gruppi generati
   var outputDiv = document.getElementById("output");
@@ -53,18 +41,15 @@ function generateGroups() {
   var tableBody = document.getElementById("frequency-table-body");
   tableBody.innerHTML = "";
   for (var i = 0; i < groups.length; i++) {
-    var group = groups[i];
-    var frequency = group.frequency;
-    var groupMembers = group.members;
-    for (var j = 0; j < groupMembers.length; j++) {
+    for (var j = 0; j < groups[i].length; j++) {
       var row = document.createElement("tr");
 
       var nameCell = document.createElement("td");
-      nameCell.textContent = groupMembers[j];
+      nameCell.textContent = groups[i][j].name;
       row.appendChild(nameCell);
 
       var frequencyCell = document.createElement("td");
-      frequencyCell.textContent = frequency;
+      frequencyCell.textContent = groups[i][j].frequency;
       row.appendChild(frequencyCell);
 
       tableBody.appendChild(row);
