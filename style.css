@@ -88,6 +88,7 @@ body {
   background-image: url('logo.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.5); /* Valore RGBA per trasparenza */
+  background-color: #fff; /* Valore RGBA per trasparenza */
+  background-position: center bottom 5cm; /* Aggiungi questa riga per abbassare l'immagine di 5 centimetri */
 }
 }
