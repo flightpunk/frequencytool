@@ -33,8 +33,8 @@ label {
 
 input[type="text"] {
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
+  padding: 8px;
+  font-size: 20px;
   border: none;
   background-color: #333;
   color: #fff;
@@ -60,6 +60,18 @@ button:hover {
 
 #output {
   margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+}
+
+#output p {
+  font-size: 60px;
+  margin: 0;
+  color: white;
 }
 
 h3 {

@@ -70,4 +70,8 @@ function generateGroups() {
       tableBody.appendChild(row);
     }
   }
+  // Aggiungi il messaggio dopo la tabella
+var message = document.createElement("p");
+message.textContent = "Happy FLY!!!!";
+outputDiv.appendChild(message);
 }
