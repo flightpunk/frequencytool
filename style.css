@@ -130,3 +130,38 @@ body {
   text-align: center;
   color: #000000; /* Cambia il colore del testo in nero */
 }
+
+
+/* Stili specifici per smartphone */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px; /* Riduci il padding per uno spaziamento più compatto */
+  }
+
+  h1 {
+    font-size: 24px; /* Riduci la dimensione del titolo */
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    font-size: 14px; /* Riduci la dimensione del testo di input */
+  }
+
+  button {
+    font-size: 14px; /* Riduci la dimensione del testo del pulsante */
+  }
+
+  /* Regole di stile specifiche per la tabella delle frequenze FPV su smartphone */
+  #frequency-table {
+    font-size: 14px; /* Riduci la dimensione del testo della tabella */
+  }
+
+  #frequency-table caption {
+    font-size: 16px; /* Aumenta la dimensione del testo della didascalia */
+  }
+
+  #frequency-table th,
+  #frequency-table td {
+    padding: 8px; /* Riduci il padding delle celle */
+  }
+}
