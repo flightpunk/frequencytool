@@ -89,6 +89,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #fff; /* Valore RGBA per trasparenza */
-  background-position: center bottom 5cm; /* Aggiungi questa riga per abbassare l'immagine di 5 centimetri */
+ 
 }
 }
