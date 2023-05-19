@@ -7,9 +7,8 @@ function generateGroups() {
 
   // Verifica se ci sono abbastanza nomi per coprire tutte le frequenze
   if (names.length < frequencies.length) {
-    alert(
-      "Il numero di nomi inseriti non è sufficiente per coprire tutte le frequenze."
-    );
+	var errMessage = "Il numero di nomi inseriti non è sufficiente per coprire tutte le frequenze.";
+    window.alert(errMessage);
     return;
   }
 

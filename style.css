@@ -19,6 +19,10 @@ h1 {
 
 .input-section {
   margin-bottom: 20px;
+  display: flex; /* Aggiungi display flex per centrare il contenuto */
+  flex-direction: column; /* Imposta la direzione di flessione come colonna */
+  align-items: center; /* Centra gli elementi verticalmente */
+  text-align: center; /* Centra il testo orizzontalmente */
 }
 
 label {
@@ -34,6 +38,7 @@ input[type="text"] {
   border: none;
   background-color: #333;
   color: #fff;
+  text-align: center;
 }
 
 button {
@@ -102,12 +107,13 @@ body {
 #frequency-table caption {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: #ffffff;
+  margin-bottom: 0px;
+  color: red;
+  background-color: black;
 }
 
 #frequency-table thead {
-  background-color: lime;
+  background-color: yellow;
 }
 
 #frequency-table th {
@@ -121,5 +127,6 @@ body {
   padding: 10px;
   border-bottom: 1px solid #ccc;
   font-weight: bold;
+  text-align: center;
   color: #000000; /* Cambia il colore del testo in nero */
 }
