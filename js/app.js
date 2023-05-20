@@ -25,6 +25,7 @@ function generateGroups() {
   for (var i = 0; i < shuffledNames.length; i++) {
     var frequencyIndex = i % frequencies.length;
     var frequency = frequencies[frequencyIndex];
+	
     groups[frequencyIndex].members.push(shuffledNames[i]);
   }
 

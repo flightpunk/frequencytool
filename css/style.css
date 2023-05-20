@@ -116,7 +116,7 @@ ul {
 }
 
 li {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   color: #fff;
 }
 
@@ -165,10 +165,11 @@ nav li a {
 
 /* Stile per la tabella delle frequenze FPV */
 #frequency-table {
-  width: 100%;
+  width: 90%;
   margin-top: 40px;
   border-collapse: collapse;
   background-color: grey; /* Cambia il colore di sfondo in grigio */
+  margin: 0 auto;
 }
 
 #frequency-table caption {
@@ -188,6 +189,7 @@ nav li a {
   text-align: center;
   font-weight: bold;
   color: #000000; /* Cambia il colore del testo in nero */
+  grid-template-columns: repeat(2, 1fr); /* Imposta 2 colonne di larghezza uguale */
 }
 
 #frequency-table tbody td {
