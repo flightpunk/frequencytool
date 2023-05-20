@@ -5,9 +5,10 @@ body {
 }
 
 .container {
-  max-width: 700px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -90,6 +91,47 @@ li {
   color: #fff;
 }
 
+/* Css per menu ipertestuale */
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Stile per l'immagine */
+.center-image {
+  max-width: 100%; /* Imposta la larghezza massima all'immagine */
+  max-height: auto; /* Imposta l'altezza massima all'immagine */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #height: 100vh; /* Regola l'altezza del contenitore per centrare verticalmente */
+}
+
+.image-container img {
+  max-width: 100%; /* Imposta la larghezza massima dell'immagine al 100% del contenitore */
+  max-height: 100%; /* Imposta l'altezza massima dell'immagine al 100% del contenitore */
+  object-fit: contain; /* Assicura che l'immagine venga ridimensionata per adattarsi al contenitore mantenendo le proporzioni */
+}
+
 /* Aggiungi stile alle immagini animate */
 @keyframes rotate {
   0% { transform: rotate(0deg); }
@@ -102,7 +144,7 @@ li {
 
 /* Stile per il background */
 body {
-  background-image: url('logo.jpeg');
+  background-image: url('img/logo.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #fff; /* Valore RGBA per trasparenza */
