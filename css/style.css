@@ -123,7 +123,7 @@ nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh; /* Regola l'altezza del contenitore per centrare verticalmente */
+  height: 15vh; /* Regola l'altezza del contenitore per centrare verticalmente */
 }
 
 .image-container img {
@@ -132,19 +132,9 @@ nav li a {
   object-fit: contain; /* Assicura che l'immagine venga ridimensionata per adattarsi al contenitore mantenendo le proporzioni */
 }
 
-/* Aggiungi stile alle immagini animate */
-@keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.animate-image {
-  animation: rotate 2s linear infinite;
-}
-
 /* Stile per il background */
 body {
-  background-image: url('img/logo.jpeg');
+  background-image: url('../img/logo.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #fff; /* Valore RGBA per trasparenza */
@@ -185,6 +175,23 @@ body {
   color: #000000; /* Cambia il colore del testo in nero */
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#output p {
+  font-size: 60px;
+  margin: 0;
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+}
 
 /* Stili specifici per smartphone */
  
@@ -192,7 +199,6 @@ body {
   body {
     background-position: center center; /* Centra l'immagine di sfondo */
   }
-}
 
   h1 {
     font-size: 24px; /* Riduci la dimensione del titolo */

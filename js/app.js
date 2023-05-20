@@ -12,26 +12,20 @@ function generateGroups() {
     return;
   }
 
-  // Assegna ad ogni nome una frequenza
-  var assignedFrequencies = {};
-  for (var i = 0; i < names.length; i++) {
-    var frequencyIndex = i % frequencies.length;
-    assignedFrequencies[names[i]] = frequencies[frequencyIndex];
-  }
+  // Mescola l'array dei nomi casualmente
+  var shuffledNames = shuffle(names.slice());
 
-  // Forma gruppi casuali che contengono tutte le frequenze
-  var shuffledNames = names.slice().sort(function() {
-    return 0.5 - Math.random();
-  });
+  // Inizializza i gruppi
   var groups = [];
   for (var frequency of frequencies) {
     groups.push({ frequency: frequency, members: [] });
   }
 
-  for (var i = 0; i < names.length; i++) {
+  // Assegna ad ogni nome una frequenza
+  for (var i = 0; i < shuffledNames.length; i++) {
     var frequencyIndex = i % frequencies.length;
     var frequency = frequencies[frequencyIndex];
-    groups[frequencyIndex].members.push(names[i]);
+    groups[frequencyIndex].members.push(shuffledNames[i]);
   }
 
   // Ordina i gruppi in base alla colonna "frequenza"
@@ -70,8 +64,26 @@ function generateGroups() {
       tableBody.appendChild(row);
     }
   }
+
   // Aggiungi il messaggio dopo la tabella
-var message = document.createElement("p");
-message.textContent = "Happy FLY!!!!";
-outputDiv.appendChild(message);
+  var message = document.createElement("p");
+  message.textContent = "Happy FLY!!!!";
+  outputDiv.appendChild(message);
 }
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+document.getElementById("generate-button").addEventListener("click", generateGroups);
