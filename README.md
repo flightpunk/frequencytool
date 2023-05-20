@@ -4,19 +4,11 @@ This web application is designed to streamline the process of assigning frequenc
 
 ## Features
 
-- **Pilot Registration and Authentication**: Pilots can create user accounts and securely authenticate to access the application using their personalized credentials.
-
-- **Frequency Management**: The application allows easy management of available frequencies and those already assigned to pilots. It includes features such as viewing available frequencies, assigning and releasing frequencies, and recording any usage restrictions or limitations.
-
-- **Frequency Booking**: Pilots can book a specific frequency for a designated period of time. They can select a date and time, and the application will verify the availability of the desired frequency.
-
-- **Notifications and Alerts**: Automatic notifications and alerts are sent to pilots to inform them about upcoming booking deadlines or any changes in their frequency assignments.
-
-- **Administrator Management**: The application provides a separate interface for administrators, allowing them to view and modify frequency assignments, monitor bookings, and manage pilot accounts.
+- **Frequency Group Generator**: The application allows easy generate of available frequencies and those already assigned to pilots. It includes features such as viewing available frequencies, assigning and releasing frequencies, and recording any usage restrictions or limitations.
 
 ## Technologies Used
 
-- The web application is developed using [INSERT FRAMEWORK/TECHNOLOGIES].
+- The web application is developed using Html,Css,JavaScript.
 
 ## Getting Started
 
