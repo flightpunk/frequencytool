@@ -1,21 +1,48 @@
+/* Stile per il background */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #888888;
   color: #fff;
+  background-image: url('../img/logo.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff; /* Valore RGBA per trasparenza */
 }
 
 .container {
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 50px;
   text-align: center;
   margin-bottom: 20px;
   color: #ffffff;
+  background: linear-gradient(45deg, cyan, yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 33px;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ff5722;
+}
+
+p {
+  font-size: 25px;
+  text-align:left;
+  color:lime;
 }
 
 .input-section {
@@ -35,7 +62,7 @@ label {
 input[type="text"] {
   width: 100%;
   padding: 8px;
-  font-size: 20px;
+  font-size: 26px;
   border: none;
   background-color: #333;
   color: #fff;
@@ -44,15 +71,23 @@ input[type="text"] {
 
 button {
   display: block;
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px;
+  font-size: 25px;
   text-transform: uppercase;
   background-color: #ff5722;
   color: #fff;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
+  /* Centratura verticale */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: -10px;
 }
 
 button:hover {
@@ -73,12 +108,6 @@ button:hover {
   font-size: 60px;
   margin: 0;
   color: white;
-}
-
-h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #ff5722;
 }
 
 ul {
@@ -105,6 +134,7 @@ nav ul {
 nav li {
   display: inline-block;
   margin-right: 10px;
+  font-size: 30px;
 }
 
 nav li a {
@@ -133,14 +163,6 @@ nav li a {
   object-fit: cover; /* Assicura che l'immagine venga ridimensionata per adattarsi al contenitore mantenendo le proporzioni */
 }
 
-/* Stile per il background */
-body {
-  background-image: url('../img/logo.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #fff; /* Valore RGBA per trasparenza */
-}
-
 /* Stile per la tabella delle frequenze FPV */
 #frequency-table {
   width: 100%;
@@ -150,9 +172,9 @@ body {
 }
 
 #frequency-table caption {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
-  margin-bottom: 0px;
+  margin-bottom: 2px;
   color: red;
   background-color: black;
 }
@@ -191,6 +213,7 @@ body {
   font-size: 60px;
   margin: 0;
   color: white;
+  text-align:center;
   animation: fadeIn 1s ease-in-out;
 }
 
