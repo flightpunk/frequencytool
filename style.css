@@ -123,7 +123,7 @@ nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  #height: 100vh; /* Regola l'altezza del contenitore per centrare verticalmente */
+  height: 10vh; /* Regola l'altezza del contenitore per centrare verticalmente */
 }
 
 .image-container img {
@@ -187,10 +187,12 @@ body {
 
 
 /* Stili specifici per smartphone */
+ 
 @media (max-width: 480px) {
-  .container {
-    padding: 10px; /* Riduci il padding per uno spaziamento più compatto */
+  body {
+    background-position: center center; /* Centra l'immagine di sfondo */
   }
+}
 
   h1 {
     font-size: 24px; /* Riduci la dimensione del titolo */
