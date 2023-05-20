@@ -115,21 +115,22 @@ nav li a {
 
 /* Stile per l'immagine */
 .center-image {
-  max-width: auto; /* Imposta la larghezza massima all'immagine */
+  max-width: 100%; /* Imposta la larghezza massima all'immagine */
   max-height: auto; /* Imposta l'altezza massima all'immagine */
 }
 
 .image-container {
+  width: 100%;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh; /* Regola l'altezza del contenitore per centrare verticalmente */
 }
 
 .image-container img {
   max-width: 100%; /* Imposta la larghezza massima dell'immagine al 100% del contenitore */
-  max-height: 100%; /* Imposta l'altezza massima dell'immagine al 100% del contenitore */
-  object-fit: contain; /* Assicura che l'immagine venga ridimensionata per adattarsi al contenitore mantenendo le proporzioni */
+  max-height: auto; /* Imposta l'altezza massima dell'immagine al 100% del contenitore */
+  object-fit: cover; /* Assicura che l'immagine venga ridimensionata per adattarsi al contenitore mantenendo le proporzioni */
 }
 
 /* Stile per il background */
