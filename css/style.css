@@ -115,7 +115,7 @@ nav li a {
 
 /* Stile per l'immagine */
 .center-image {
-  max-width: 100%; /* Imposta la larghezza massima all'immagine */
+  max-width: auto; /* Imposta la larghezza massima all'immagine */
   max-height: auto; /* Imposta l'altezza massima all'immagine */
 }
 
