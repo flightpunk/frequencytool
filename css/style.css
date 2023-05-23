@@ -1,0 +1,289 @@
+/* Stile per il background */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #888888;
+  color: #fff;
+  background-image: url('../img/logo.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff; /* Valore RGBA per trasparenza */
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background: linear-gradient(45deg, cyan, yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 33px;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ff5722;
+}
+
+p {
+  font-size: 25px;
+  text-align:left;
+  color:lime;
+}
+
+.input-section {
+  margin-bottom: 20px;
+  display: flex; /* Aggiungi display flex per centrare il contenuto */
+  flex-direction: column; /* Imposta la direzione di flessione come colonna */
+  align-items: center; /* Centra gli elementi verticalmente */
+  text-align: center; /* Centra il testo orizzontalmente */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #FFFF00;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 26px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+button {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px;
+  font-size: 25px;
+  text-transform: uppercase;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  /* Centratura verticale */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: -10px;
+}
+
+button:hover {
+  background-color: #f44336;
+}
+
+#output {
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+}
+
+#output p {
+  font-size: 60px;
+  margin: 0;
+  color: white;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Css per menu ipertestuale */
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Stile per l'immagine */
+.center-image {
+  max-width: 100%; /* Imposta la larghezza massima all'immagine */
+  max-height: auto; /* Imposta l'altezza massima all'immagine */
+}
+
+.image-container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%; /* Imposta la larghezza massima dell'immagine al 100% del contenitore */
+  max-height: auto; /* Imposta l'altezza massima dell'immagine al 100% del contenitore */
+  object-fit: cover; /* Assicura che l'immagine venga ridimensionata per adattarsi al contenitore mantenendo le proporzioni */
+}
+
+/* Stile per la tabella delle frequenze FPV */
+#frequency-table {
+  width: 90%;
+  margin-top: 40px;
+  border-collapse: collapse;
+  background-color: grey; /* Cambia il colore di sfondo in grigio */
+  margin: 0 auto;
+}
+
+#frequency-table caption {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: red;
+  background-color: black;
+}
+
+#frequency-table thead {
+  background-color: yellow;
+}
+
+#frequency-table th {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000; /* Cambia il colore del testo in nero */
+  grid-template-columns: repeat(2, 1fr); /* Imposta 2 colonne di larghezza uguale */
+}
+
+#frequency-table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  text-align: center;
+  color: #000000; /* Cambia il colore del testo in nero */
+}
+
+/*menu link*/
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#output p {
+  font-size: 60px;
+  margin: 0;
+  color: white;
+  text-align:center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Stili specifici per smartphone */
+ 
+@media (max-width: 480px) {
+  body {
+    background-position: center center; /* Centra l'immagine di sfondo */
+  }
+
+  h1 {
+    font-size: 24px; /* Riduci la dimensione del titolo */
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    font-size: 14px; /* Riduci la dimensione del testo di input */
+  }
+
+  button {
+    font-size: 14px; /* Riduci la dimensione del testo del pulsante */
+  }
+
+  /* Regole di stile specifiche per la tabella delle frequenze FPV su smartphone */
+  #frequency-table {
+    font-size: 14px; /* Riduci la dimensione del testo della tabella */
+  }
+
+  #frequency-table caption {
+    font-size: 16px; /* Aumenta la dimensione del testo della didascalia */
+  }
+
+  #frequency-table th,
+  #frequency-table td {
+    padding: 8px; /* Riduci il padding delle celle */
+  }
+}
